@@ -1,0 +1,45 @@
+{
+    "schemaNamespace" : "SocialNetwork",
+    "input" : {
+        "operationSearchPaths" : [
+            "**/*.graphql"
+        ],
+        "schemaSearchPaths" : [
+            "**/*.graphqls"
+        ]
+    },
+    "output" : {
+        "testMocks" : {
+            "none" : {
+            }
+        },
+        "schemaTypes" : {
+            "path" : "./SocialNetwork",
+            "moduleType" : {
+                "swiftPackageManager" : {
+                    "name" : "graphQL"
+                }
+            }
+        },
+        "operations" : {
+            "inSchemaModule" : {
+            }
+        }
+    },
+    "schemaDownloadConfiguration": {
+        "downloadMethod": {
+            "introspection": {
+                "endpointURL": "https://graphqlzero.almansi.me/api",
+                "httpMethod": {
+                    "POST": {}
+                },
+                "includeDeprecatedInputValues": false,
+                "outputFormat": "SDL"
+            }
+        },
+        "downloadTimeout": 60,
+        "headers": [],
+        "outputPath": "./Generated/schema.graphqls"
+    }
+}
+

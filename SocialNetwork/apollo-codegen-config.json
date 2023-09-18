@@ -1,0 +1,44 @@
+{
+    "schemaNamespace" : "SocialNetworkAPI",
+    "input" : {
+        "operationSearchPaths" : [
+            "**/*.graphql"
+        ],
+        "schemaSearchPaths" : [
+            "**/*.graphqls"
+        ]
+    },
+    "output" : {
+        "testMocks" : {
+            "none" : {
+            }
+        },
+        "schemaTypes" : {
+            "path" : "./SocialNetworkAPI",
+            "moduleType" : {
+                "swiftPackageManager" : {
+                    "name" : "SocialNetworkAPI"
+                }
+            }
+        },
+        "operations" : {
+            "inSchemaModule" : {
+            }
+        }
+    },
+    "schemaDownloadConfiguration": {
+          "downloadMethod": {
+              "introspection": {
+                  "endpointURL": "https://c35a-202-166-198-75.ngrok-free.app/graphql",
+                  "httpMethod": {
+                      "POST": {}
+                  },
+                  "includeDeprecatedInputValues": false,
+                  "outputFormat": "SDL"
+              }
+          },
+          "downloadTimeout": 60,
+          "headers": [],
+          "outputPath": "./Generated/schema.graphqls"
+      }
+    }

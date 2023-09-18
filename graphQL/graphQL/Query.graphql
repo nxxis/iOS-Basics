@@ -1,0 +1,17 @@
+query FetchUser($login: String!) {
+  user(login: $login) {
+    bio
+    email
+    name
+    location
+  }
+}
+
+mutation UpdateUserStatus($input: ChangeUserStatusInput!) {
+  changeUserStatus(input: $input) {
+    status {
+      message
+      emoji
+    }
+  }
+}

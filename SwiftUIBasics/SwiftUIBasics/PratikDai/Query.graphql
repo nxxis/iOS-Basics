@@ -1,0 +1,15 @@
+mutation SignUp($createUserInput: CreateUserInput!) {
+  createUser(createUserInput: $createUserInput) {
+    email
+    password
+    username
+  }
+}
+
+query SignIn($loginData: LoginInput!) {
+  validateUser(loginData: $loginData) {
+    email
+    username
+    access_token
+  }
+}

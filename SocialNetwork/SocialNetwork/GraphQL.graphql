@@ -1,0 +1,53 @@
+mutation CreateUser($createUserInput: CreateUserInput!) {
+  createUser(createUserInput: $createUserInput) {
+    email
+    username
+  }
+}
+
+query userValidate($loginData: LoginInput!) {
+  validateUser(loginData: $loginData) {
+    email
+    username
+    access_token
+  }
+}
+
+mutation CreatePost($createPost: CreatePostInput!) {
+  createPost(createPost: $createPost) {
+    isPublic
+    postDescription
+    postTitle
+    postedBy {
+      email
+      username
+    }
+  }
+}
+
+mutation RemovePost($removePostId: String!) {
+  removePost(id: $removePostId) {
+    post {
+      postDescription
+      postTitle
+      postedBy {
+        email
+        username
+      }
+    }
+  }
+}
+
+query GetPosts {
+  getPosts {
+    _id
+    isPublic
+    postDescription
+    postTitle
+    postedBy {
+      email
+      username
+    }
+  }
+}
+

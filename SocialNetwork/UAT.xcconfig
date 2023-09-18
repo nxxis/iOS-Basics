@@ -1,0 +1,12 @@
+//
+//  UAT.xcconfig
+//  SocialNetwork
+//
+//  Created by ebpearls on 08/08/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PRODUCT_BUNDLE_IDENTIFIER = com.EBPearls.SocialNetwork.UAT
+BUNDLE_DISPLAY_NAME = SocialNetworkUAT

@@ -1,0 +1,44 @@
+{
+    "schemaNamespace" : "BaralAPI",
+    "input" : {
+        "operationSearchPaths" : [
+            "**/*.graphql"
+        ],
+        "schemaSearchPaths" : [
+            "**/*.graphqls"
+        ]
+    },
+    "output" : {
+        "testMocks" : {
+            "none" : {
+            }
+        },
+        "schemaTypes" : {
+            "path" : "./BaralAPI",
+            "moduleType" : {
+                "swiftPackageManager" : {
+                    "name" : "BaralAPI"
+                }
+            }
+        },
+        "operations" : {
+            "inSchemaModule" : {
+            }
+        }
+    },
+    "schemaDownloadConfiguration": {
+          "downloadMethod": {
+              "introspection": {
+                  "endpointURL": "https://f6ce-202-166-198-75.ngrok-free.app/graphql",
+                  "httpMethod": {
+                      "POST": {}
+                  },
+                  "includeDeprecatedInputValues": false,
+                  "outputFormat": "SDL"
+              }
+          },
+          "downloadTimeout": 60,
+          "headers": [],
+          "outputPath": "./Generated/schema.graphqls"
+      }
+    }
